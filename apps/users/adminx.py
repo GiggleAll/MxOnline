@@ -5,7 +5,7 @@ __date__ = '2017/4/28 0028 9:11'
 import xadmin
 from xadmin import views
 
-from .models import EmailVerifyRecord, Banner
+from .models import EmailVerifyRecord, Banner, UserProfile
 
 
 class BaseSetting(object):
@@ -30,8 +30,11 @@ class BannerAdmin(object):
     search_fields = ['title', 'image', 'url', 'index']
     list_filter = ['title', 'image', 'url', 'index', 'add_time']
 
+class UserProfileAdmin(object):
+    pass
 
 xadmin.site.register(EmailVerifyRecord, EmailVerifyRecordAdmin)
 xadmin.site.register(Banner, BannerAdmin)
+xadmin.site.register(UserProfile, UserProfileAdmin)
 xadmin.site.register(views.BaseAdminView, BaseSetting)
 xadmin.site.register(views.CommAdminView, GlobalSetting)

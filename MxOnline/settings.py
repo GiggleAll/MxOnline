@@ -136,4 +136,4 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
-EMAIL_HOST = 'smtp.
+EMAIL_HOST = 'smtp.sina.com'

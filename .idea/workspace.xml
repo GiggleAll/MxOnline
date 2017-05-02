@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33f22b02-6388-4eec-a930-e6526683982b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/active_fail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/forgetpwd.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/send_success.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MxOnline/urls.py" afterPath="$PROJECT_DIR$/MxOnline/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/users/forms.py" afterPath="$PROJECT_DIR$/apps/users/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/users/views.py" afterPath="$PROJECT_DIR$/apps/users/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/utils/email_send.py" afterPath="$PROJECT_DIR$/apps/utils/email_send.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,7 +32,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
+            <state relative-caret-position="306">
               <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
               <folding>
                 <element signature="e#15#50#0" expanded="true" />
@@ -1821,7 +1813,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493737155164</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="开始学习忘记密码 2017-5-3 01:04:40">
+      <created>1493744684760</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1493744684760</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1904,7 +1903,8 @@
     <MESSAGE value="登录，账号密码验证2017-4-30 15:35:45" />
     <MESSAGE value="完成验证码 开始发送邮件2017-5-2 19:12:25" />
     <MESSAGE value="完成注册 2017-5-2 22:59:08" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成注册 2017-5-2 22:59:08" />
+    <MESSAGE value="开始学习忘记密码 2017-5-3 01:04:40" />
+    <option name="LAST_COMMIT_MESSAGE" value="开始学习忘记密码 2017-5-3 01:04:40" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2269,7 +2269,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
+        <state relative-caret-position="306">
           <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding>
             <element signature="e#15#50#0" expanded="true" />

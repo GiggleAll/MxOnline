@@ -7,7 +7,7 @@ from django.views.generic.base import View
 from django.contrib.auth.hashers import make_password
 
 from .models import UserProfile, EmailVerifyRecord
-from .forms import LoginForm, RegisterForm, ForgetForm
+from .forms import LoginForm, RegisterForm, ForgetForm, ModifyPwdForm
 from utils.email_send import send_register_email
 
 
@@ -35,6 +35,37 @@ class ActiveUserView(View):
             return render(request, 'active_fail.html')
 
         return render(request, 'login.html')
+
+
+class ResetView(View):
+    def get(self, request, reset_code):
+        all_records = EmailVerifyRecord.objects.filter(code=reset_code)
+        if all_records:
+            for record in all_records:
+                email = record.email
+                return render(request, 'password_reset.html', {'email': email})
+        else:
+            return render(request, 'active_fail.html')
+
+        return render(request, 'login.html')
+
+
+class ModifyPwdView(View):
+    def post(self, request):
+        modify_form = ModifyPwdForm(request.POST)
+        if modify_form.is_valid():
+            pwd1 = request.POST.get('password1', '')
+            pwd2 = request.POST.get('password2', '')
+            email = request.POST.get('email', '')
+            if pwd1 != pwd2:
+                return render(request, 'password_reset.html', {'email': email, 'msg': u'密码不一致'})
+            user = UserProfile.objects.get(email=email)
+            user.password = make_password(pwd1)
+            user.save()
+            return render(request, 'login.html')
+        else:
+            email = request.POST.get('email', '')
+            return render(request, 'password_reset.html', {'email': email, 'modify_form': modify_form})
 
 
 class RegisterView(View):
@@ -93,6 +124,10 @@ class ForgetPwdView(View):
         forget_form = ForgetForm(request.POST)
         if forget_form.is_valid():
             email = request.POST.get('email', '')
+            if UserProfile.objects.filter(email=email) is None:
+                return render(request, 'forgetpwd.html', {'forget_form': forget_form, 'msg': u'用户不存在'})
+
             send_register_email(email, 'forget')
             return render(request, 'send_success.html')
-
+        else:
+            return render(request, 'forgetpwd.html', {'forget_form': forget_form})

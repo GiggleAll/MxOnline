@@ -2,9 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33f22b02-6388-4eec-a930-e6526683982b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/organization/migrations/0002_auto_20170506_1047.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/Entity/2016/11/default_middile_14_20161113173158_261.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/Entity/2016/11/default_middile_1_20161113172604_856.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/Entity/ueditor/default_middile_13_20161113185849_453.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/banner/2016/11/57a801860001c34b12000460.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/banner/2016/11/57a801860001c34b12000460_z4Vb8zl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/banner/2016/11/57aa86a0000145c512000460.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/banner/2016/11/57aa86a0000145c512000460_GXIBATC.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/banner/2016/11/57aa86a0000145c512000460_nMwvoQD.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/course/resource/2016/11/curl_wget.rar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/course/resource/2016/11/media.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/2016/11/540e57300001d6d906000338-240-135.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/2016/11/540e57300001d6d906000338-240-135_MSIqfvw.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/2016/11/540e57300001d6d906000338-240-135_Z3HIQ2t.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/2016/11/540e57300001d6d906000338-240-135_mvvGYHL.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/2016/11/540e57300001d6d906000338-240-135_n0L8vbw.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/2016/11/540e57300001d6d906000338-240-135_wH52IED.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/2016/11/57035ff200014b8a06000338-240-135.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/2016/11/57035ff200014b8a06000338-240-135_0nFiBSI.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/2016/11/57035ff200014b8a06000338-240-135_dHfj8Nq.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/2016/11/default_middile_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/2016/11/mysql.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/2016/12/57035ff200014b8a06000338-240-135_dHfj8Nq.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/2016/12/mysql.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/2016/12/python文件处理.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/2016/12/python错误和异常.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/2016/12/python面向对象.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/ueditor/57a801860001c34b12000460_z4Vb8zl_20161210233313_629.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/ueditor/57aa86a0000145c512000460_20161210234050_865.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/ueditor/aobama_20161113225004_372.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/courses/ueditor/aobama_20161113225044_773.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/image/2016/11/default_middile_18.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/image/2016/11/default_middile_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/image/2016/11/default_middile_2_WZ1559E.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/image/2016/11/default_middile_7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/image/2016/11/default_middile_8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/image/2016/12/default_big_14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/org/2016/11/bjdx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/org/2016/11/imooc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/org/2016/11/imooc_Gn1sRjp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/org/2016/11/imooc_OO2ykYP.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/org/2016/11/imooc_V0TJOyb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/org/2016/11/imooc_Y2Tonsq.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/org/2016/11/imooc_klgAUn5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/org/2016/11/imooc_qEaMov1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/org/2016/11/njdx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/org/2016/11/qhdx-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/org/2016/12/bjdx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/org/2016/12/bjdx_bcd0m07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/org/2016/12/bjdx_cCpdUw8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/org/2016/12/imooc_Gn1sRjp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/org/2016/12/imooc_klgAUn5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/teacher/2016/11/aobama.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/media/teacher/2016/11/aobama_CXWwMef.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/courses/2017/04/Portrait_Mode_66.865671641791px_1192335_easyicon.net.png" afterPath="$PROJECT_DIR$/media/courses/2017/04/Portrait_Mode_66.865671641791px_1192335_easyicon.net.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MxOnline/settings.py" afterPath="$PROJECT_DIR$/MxOnline/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MxOnline/urls.py" afterPath="$PROJECT_DIR$/MxOnline/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/organization/models.py" afterPath="$PROJECT_DIR$/apps/organization/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/organization/views.py" afterPath="$PROJECT_DIR$/apps/organization/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/org-list.html" afterPath="$PROJECT_DIR$/templates/org-list.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,62 +75,18 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="MxOnline" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MxOnline/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-23">
-              <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+            <state relative-caret-position="777">
+              <caret line="41" column="70" lean-forward="true" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
               <folding>
                 <element signature="e#712#753#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-              <folding>
-                <element signature="e#15#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/users/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="118" column="27" lean-forward="false" selection-start-line="118" selection-start-column="27" selection-end-line="118" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="85" column="19" lean-forward="true" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
-              <folding>
-                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#8;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -82,22 +95,45 @@
       <file leaf-file-name="org-list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/org-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="317" column="14" lean-forward="true" selection-start-line="317" selection-start-column="14" selection-end-line="317" selection-end-column="14" />
+            <state relative-caret-position="99">
+              <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
               <folding>
                 <element signature="n#block#1;n#!!top" expanded="false" />
-                <element signature="n#block#2;n#!!top" expanded="false" />
-                <element signature="e#3722#3748#0#HTML" expanded="true" />
-                <element signature="e#3821#3847#0#HTML" expanded="true" />
-                <element signature="e#5530#5556#0#HTML" expanded="true" />
-                <element signature="e#5629#5655#0#HTML" expanded="true" />
-                <element signature="e#7343#7369#0#HTML" expanded="true" />
-                <element signature="e#7442#7468#0#HTML" expanded="true" />
-                <element signature="e#9151#9177#0#HTML" expanded="true" />
-                <element signature="e#9250#9276#0#HTML" expanded="true" />
-                <element signature="e#10968#10994#0#HTML" expanded="true" />
-                <element signature="e#11067#11093#0#HTML" expanded="true" />
+                <element signature="e#3667#3693#0#HTML" expanded="true" />
+                <element signature="e#3782#3808#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MxOnline/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="72" column="25" lean-forward="true" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+              <folding>
+                <element signature="e#15#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,8 +150,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>respon</find>
-      <find>response</find>
       <find>respons</find>
       <find>t</find>
       <find>tem</find>
@@ -144,6 +178,8 @@
       <find>forget_pwd</find>
       <find>../</find>
       <find>{%  static '' %}</find>
+      <find>media</find>
+      <find>media/</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;static/</replace>
@@ -163,7 +199,6 @@
         <option value="$PROJECT_DIR$/apps/users/models.py" />
         <option value="$PROJECT_DIR$/apps/courses/adminx.py" />
         <option value="$PROJECT_DIR$/apps/courses/models.py" />
-        <option value="$PROJECT_DIR$/apps/organization/models.py" />
         <option value="$PROJECT_DIR$/apps/organization/adminx.py" />
         <option value="$PROJECT_DIR$/apps/operation/models.py" />
         <option value="$PROJECT_DIR$/apps/operation/adminx.py" />
@@ -176,8 +211,6 @@
         <option value="$PROJECT_DIR$/apps/organization/__init__.py" />
         <option value="$PROJECT_DIR$/apps/organization/apps.py" />
         <option value="$PROJECT_DIR$/apps/users/adminx.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/MxOnline/settings.py" />
         <option value="$PROJECT_DIR$/templates/active_fail.html" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/send_success.py" />
@@ -188,9 +221,12 @@
         <option value="$PROJECT_DIR$/apps/users/forms.py" />
         <option value="$PROJECT_DIR$/apps/users/views.py" />
         <option value="$PROJECT_DIR$/templates/register.html" />
-        <option value="$PROJECT_DIR$/apps/organization/views.py" />
-        <option value="$PROJECT_DIR$/MxOnline/urls.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/apps/organization/models.py" />
+        <option value="$PROJECT_DIR$/MxOnline/settings.py" />
+        <option value="$PROJECT_DIR$/MxOnline/urls.py" />
+        <option value="$PROJECT_DIR$/apps/organization/views.py" />
         <option value="$PROJECT_DIR$/templates/org-list.html" />
       </list>
     </option>
@@ -224,7 +260,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -234,20 +269,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="MxOnline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MxOnline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MxOnline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -299,25 +320,29 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="last_opened_file_path" value="$USER_HOME$/Envs/mxonline/Scripts/python.exe" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\code\Django\MxOnline\extra_apps" />
-      <recent name="C:\code\Django\MxOnline\apps" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Code\MxOnline\templates" />
       <recent name="C:\code\Django\MxOnline\templates" />
       <recent name="C:\Code\MxOnline\static" />
       <recent name="C:\code\Django\MxOnline\static" />
       <recent name="C:\code\Django\MxOnline" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Code\MxOnline\media\image" />
+      <recent name="C:\Code\MxOnline\media\courses" />
+      <recent name="C:\Code\MxOnline\media\course\resource" />
+      <recent name="C:\Code\MxOnline\media\course" />
+      <recent name="C:\Code\MxOnline\media" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -585,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493825509712</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="完成模板的学习 2017-5-4 23:34:37">
+      <created>1493912084528</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1493912084528</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -601,25 +633,25 @@
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18574513" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.49786323" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3822342" sideWeight="0.50427353" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1741453" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18898489" sideWeight="0.49196786" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="manage.py@MxOnline" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279503" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1741453" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38136646" sideWeight="0.4957265" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18898489" sideWeight="0.50803214" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="manage.py@MxOnline" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279503" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -658,7 +690,8 @@
     <MESSAGE value="完成注册 2017-5-2 22:59:08" />
     <MESSAGE value="开始学习忘记密码 2017-5-3 01:04:40" />
     <MESSAGE value="学习模板的使用 2017-5-3 23:31:44" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习模板的使用 2017-5-3 23:31:44" />
+    <MESSAGE value="完成模板的学习 2017-5-4 23:34:37" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成模板的学习 2017-5-4 23:34:37" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -687,39 +720,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/courses/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="48" lean-forward="false" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/courses/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/organization/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courses/2017/04/Portrait_Mode_66.865671641791px_1192335_easyicon.net.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/organization/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/app_index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -756,11 +756,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Envs/mx/Lib/site-packages/django/template/defaulttags.py" />
-    <entry file="file://$PROJECT_DIR$/static/media/image/2016/12/default_big_14.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/images/top_down.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -790,13 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -839,14 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MxOnline/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="134" column="20" lean-forward="true" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/send_success.py" />
     <entry file="file://$PROJECT_DIR$/templates/active_fail.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -886,13 +866,6 @@
       </provider>
     </entry>
     <entry file="file://C:/前端/html/password_reset.html" />
-    <entry file="file://$PROJECT_DIR$/templates/forgetpwd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2538">
-          <caret line="94" column="33" lean-forward="false" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/password_reset.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -933,35 +906,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
+        <state relative-caret-position="2943">
           <caret line="118" column="27" lean-forward="false" selection-start-line="118" selection-start-column="27" selection-end-line="118" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="e#15#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MxOnline/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding>
-            <element signature="e#712#753#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state relative-caret-position="4347">
           <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
           <folding />
         </state>
@@ -977,39 +930,105 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="85" column="19" lean-forward="true" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
-          <folding>
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#script#8;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="2295">
+          <caret line="85" column="19" lean-forward="false" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/media/org/2016/11/imooc.png">
+    <entry file="file://$PROJECT_DIR$/media/org/2016/11/imooc.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/operation/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-567">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/forgetpwd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="94" column="34" lean-forward="false" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/image/2016/12/default_big_14.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="30" column="52" lean-forward="true" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/courses/2017/04/Portrait_Mode_66.865671641791px_1192335_easyicon.net.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/image/2017/04/IMG_1077.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/org/2017/05/imooc.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MxOnline/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="41" column="70" lean-forward="true" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
+          <folding>
+            <element signature="e#712#753#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MxOnline/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="72" column="25" lean-forward="true" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <element signature="e#15#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/org-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="317" column="14" lean-forward="true" selection-start-line="317" selection-start-column="14" selection-end-line="317" selection-end-column="14" />
+        <state relative-caret-position="99">
+          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
           <folding>
             <element signature="n#block#1;n#!!top" expanded="false" />
-            <element signature="n#block#2;n#!!top" expanded="false" />
-            <element signature="e#3722#3748#0#HTML" expanded="true" />
-            <element signature="e#3821#3847#0#HTML" expanded="true" />
-            <element signature="e#5530#5556#0#HTML" expanded="true" />
-            <element signature="e#5629#5655#0#HTML" expanded="true" />
-            <element signature="e#7343#7369#0#HTML" expanded="true" />
-            <element signature="e#7442#7468#0#HTML" expanded="true" />
-            <element signature="e#9151#9177#0#HTML" expanded="true" />
-            <element signature="e#9250#9276#0#HTML" expanded="true" />
-            <element signature="e#10968#10994#0#HTML" expanded="true" />
-            <element signature="e#11067#11093#0#HTML" expanded="true" />
+            <element signature="e#3667#3693#0#HTML" expanded="true" />
+            <element signature="e#3782#3808#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,9 +1,11 @@
 # coding=utf-8
 from django.shortcuts import render
 from django.views.generic import View
+from django.http import HttpResponse
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 
 from .models import CourseOrg, CityDict
+from .forms import UserAskForm
 
 
 # Create your views here.
@@ -56,8 +58,22 @@ class OrgView(View):
             'all_orgs': orgs,
             'all_citys': all_citys,
             'org_nums': org_nums,
-            'city_id':city_id_get,
+            'city_id': city_id_get,
             'category': category,
             'hot_orgs': hot_orgs,
             'sort_type': sort_type,
         })
+
+
+class AddUserAskView(View):
+    '''
+    用户添加咨询
+    '''
+    def post(self, request):
+        userask_form = UserAskForm(request.POST)
+        if userask_form.is_valid():
+            user_ask = userask_form.save(commit=True)
+            # 返回的json字符串一定要用双引号括起来，不然ajax无法执行success函数
+            return HttpResponse('{"status": "success"}', content_type='application/json')
+        else:
+            return HttpResponse('{"status": "fail", "msg": "添加出错"}', content_type='application/json')

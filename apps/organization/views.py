@@ -10,10 +10,9 @@ from .forms import UserAskForm
 
 # Create your views here.
 class OrgView(View):
-    '''
+    """
     课程机构列表功能
-    '''
-
+    """
     def get(self, request):
         # 课程机构
         all_orgs = CourseOrg.objects.all()
@@ -66,14 +65,14 @@ class OrgView(View):
 
 
 class AddUserAskView(View):
-    '''
+    """
     用户添加咨询
-    '''
+    """
     def post(self, request):
         userask_form = UserAskForm(request.POST)
         if userask_form.is_valid():
             user_ask = userask_form.save(commit=True)
-            # 返回的json字符串一定要用双引号括起来，不然ajax无法执行success函数
+            # 返回的json中的key和value一定要用双引号括起来，不然前端无法正确解析返回的json，不执行success函数，而执行error函数
             return HttpResponse('{"status": "success"}', content_type='application/json')
         else:
             return HttpResponse('{"status": "fail", "msg": "添加出错"}', content_type='application/json')

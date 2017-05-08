@@ -6,6 +6,7 @@ from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 
 from .models import CourseOrg, CityDict
 from .forms import UserAskForm
+from courses.models import Course
 
 
 # Create your views here.
@@ -13,6 +14,7 @@ class OrgView(View):
     """
     课程机构列表功能
     """
+
     def get(self, request):
         # 课程机构
         all_orgs = CourseOrg.objects.all()
@@ -68,6 +70,7 @@ class AddUserAskView(View):
     """
     用户添加咨询
     """
+
     def post(self, request):
         userask_form = UserAskForm(request.POST)
         if userask_form.is_valid():
@@ -76,3 +79,69 @@ class AddUserAskView(View):
             return HttpResponse('{"status": "success"}', content_type='application/json')
         else:
             return HttpResponse('{"status": "fail", "msg": "添加出错"}', content_type='application/json')
+
+
+class OrgHomeView(View):
+    """
+    机构首页
+    """
+
+    def get(self, request, org_id):
+        current_page = 'home'
+        course_org = CourseOrg.objects.get(id=int(org_id))
+        all_courses = course_org.course_set.all()[:3]
+        all_teachers = course_org.teacher_set.all()[:1]
+        return render(request, 'org-detail-homepage.html', {
+            'all_courses': all_courses,
+            'all_teachers': all_teachers,
+            'course_org': course_org,
+            'current_page': current_page,
+        })
+
+
+class OrgCourseView(View):
+    """
+    机构课程列表页
+    """
+
+    def get(self, request, org_id):
+        current_page = 'course'
+        course_org = CourseOrg.objects.get(id=int(org_id))
+        all_courses = course_org.course_set.all()
+        return render(request, 'org-detail-course.html', {
+            'all_courses': all_courses,
+            'course_org': course_org,
+            'current_page': current_page,
+        })
+
+
+class OrgDescView(View):
+    """
+    机构介绍
+    """
+
+    def get(self, request, org_id):
+        current_page = 'desc'
+        course_org = CourseOrg.objects.get(id=int(org_id))
+        return render(request, 'org-detail-desc.html', {
+            'course_org': course_org,
+            'current_page': current_page,
+        })
+
+
+class OrgTeacherView(View):
+    """
+    机构讲师
+    """
+
+    def get(self, request, org_id):
+        current_page = 'teacher'
+        course_org = CourseOrg.objects.get(id=int(org_id))
+        all_teachers = course_org.teacher_set.all()[:1]
+        return render(request, 'org-detail-teachers.html', {
+            'all_teachers': all_teachers,
+            'current_page': current_page,
+            # 下面这个course_org一定要传进去，不然在调用到org_base.html时会出错
+            # org_base.html用到了course_org
+            'course_org': course_org,
+        })

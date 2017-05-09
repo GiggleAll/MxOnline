@@ -77,4 +77,4 @@ class UserCourse(models.Model):
         verbose_name_plural = verbose_name
 
     def __unicode__(self):
-        return self.user
+        return self.user.username

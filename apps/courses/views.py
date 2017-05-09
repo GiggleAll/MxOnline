@@ -37,3 +37,20 @@ class CourseListView(View):
             'hot_course': hot_course,
             'sort_type': sort_type
         })
+
+
+class CourseDetailView(View):
+    """
+    课程详情
+    """
+    def get(self, request, course_id):
+        course = Course.objects.get(id=int(course_id))
+        course.click_nums += 1
+        course.save()
+        lesson_num = course.lesson_set.all().count()
+        user_courses = course.usercourse_set.all()[:5]
+        return render(request, 'course-detail.html', {
+            'course': course,
+            'lesson_num': lesson_num,
+            'user_courses': user_courses,
+        })

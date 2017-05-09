@@ -22,6 +22,7 @@ class UserAsk(models.Model):
     def __unicode__(self):
         return self.name
 
+
 class CourseComments(models.Model):
     '''课程评论'''
     user = models.ForeignKey(UserProfile, verbose_name=u'用户')
@@ -36,10 +37,12 @@ class CourseComments(models.Model):
     def __unicode__(self):
         return '{0} {1}'.format(self.user, self.course)
 
+
 class UserFavorite(models.Model):
     user = models.ForeignKey(UserProfile, verbose_name=u'用户')
     fav_id = models.IntegerField(default=0, verbose_name=u'数据id')
-    fav_type = models.IntegerField(choices=((1, '课程'), (2, '课程机构'), (3, '僵尸')), default=1, verbose_name=u'收藏类型')
+    fav_type = models.IntegerField(choices=((1, '课程'), (2, '课程机构'), (3, '僵尸')), default=1,
+                                   verbose_name=u'收藏类型')
     add_time = models.DateTimeField(default=datetime.now, verbose_name=u'添加时间')
 
     class Meta:
@@ -48,6 +51,7 @@ class UserFavorite(models.Model):
 
     def __unicode__(self):
         return self.user
+
 
 class UserMessage(models.Model):
     user = models.IntegerField(default=0, verbose_name=u'接收用户')
@@ -61,6 +65,7 @@ class UserMessage(models.Model):
 
     def __unicode__(self):
         return self.user
+
 
 class UserCourse(models.Model):
     user = models.ForeignKey(UserProfile, verbose_name=u'用户')

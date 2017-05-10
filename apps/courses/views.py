@@ -78,3 +78,29 @@ class CourseDetailView(View):
             'has_fav_course_org': has_fav_course_org,
             'relate_courses': relate_courses,
         })
+
+
+class CourseVideoView(View):
+    """
+    课程的章节信息
+    """
+
+    def get(self, request, course_id):
+        course = Course.objects.get(id=int(course_id))
+
+        return render(request, 'course-video.html', {
+            'course': course,
+        })
+
+
+class CourseCommentView(View):
+    """
+    课程的评论信息
+    """
+
+    def get(self, request, course_id):
+        course = Course.objects.get(id=int(course_id))
+
+        return render(request, 'course-comment.html', {
+            'course': course,
+        })

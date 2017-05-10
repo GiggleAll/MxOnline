@@ -1,9 +1,12 @@
 # coding=utf-8
 from django.shortcuts import render
 from django.views.generic.base import View
+from django.db.models import Q
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 
 from .models import Course
+from operation.models import UserFavorite
+
 
 # Create your views here.
 class CourseListView(View):
@@ -43,14 +46,35 @@ class CourseDetailView(View):
     """
     课程详情
     """
+
     def get(self, request, course_id):
         course = Course.objects.get(id=int(course_id))
+        # 增加课程点击数
         course.click_nums += 1
         course.save()
-        lesson_num = course.lesson_set.all().count()
-        user_courses = course.usercourse_set.all()[:5]
+
+        # 课程是否被收藏
+        has_fav_course = False
+        if request.user.is_authenticated():
+            if UserFavorite.objects.filter(user=request.user, fav_id=course.id, fav_type=1):
+                has_fav_course = True
+
+        # 课程机构是否被收藏
+        has_fav_course_org = False
+        if request.user.is_authenticated():
+            if UserFavorite.objects.filter(user=request.user, fav_id=course.course_org.id, fav_type=2):
+                has_fav_course_org = True
+
+        # 相关课程推荐
+        tag = course.tag
+        if tag:
+            relate_courses = Course.objects.filter(~Q(id=course.id), tag=course.tag).order_by('-click_nums')[:1]
+        else:
+            relate_courses = Course.objects.filter(~Q(id=course.id)).order_by('-click_nums')[:1]
+
         return render(request, 'course-detail.html', {
             'course': course,
-            'lesson_num': lesson_num,
-            'user_courses': user_courses,
+            'has_fav_course': has_fav_course,
+            'has_fav_course_org': has_fav_course_org,
+            'relate_courses': relate_courses,
         })

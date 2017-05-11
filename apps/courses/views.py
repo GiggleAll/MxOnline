@@ -6,7 +6,8 @@ from django.http import HttpResponse
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 
 from .models import Course
-from operation.models import UserFavorite, CourseComments
+from operation.models import UserFavorite, CourseComments, UserCourse
+from utils.mixin_utils import LoginRequiredMixin
 
 
 # Create your views here.
@@ -43,7 +44,7 @@ class CourseListView(View):
         })
 
 
-class CourseDetailView(View):
+class CourseDetailView(LoginRequiredMixin, View):
     """
     课程详情
     """
@@ -81,16 +82,33 @@ class CourseDetailView(View):
         })
 
 
-class CourseVideoView(View):
+class CourseInfoView(LoginRequiredMixin, View):
     """
     课程的章节信息
     """
 
     def get(self, request, course_id):
+        # 取出当前课程
         course = Course.objects.get(id=int(course_id))
+
+        # 查询用户是否已经关联了该课程
+        if not UserCourse.objects.filter(user=request.user, course=course):
+            UserCourse(user=request.user, course=course).save()
+
+        # 取出当前课程的所有用户
+        user_courses = course.get_user_courses()
+        # 取出当前课程所有用户的id
+        user_ids = [user_course.user.id for user_course in user_courses]
+        # 取出当前课程所有用户的课程学习记录
+        relate_user_courses = UserCourse.objects.filter(user_id__in=user_ids)
+        # 取出当前课程所有用户课程学习记录中的课程id
+        relate_course_ids = [user_course.course.id for user_course in relate_user_courses]
+        # 取出当前课程所有用户的课程，并按点击量降序排列取5个
+        relate_courses = Course.objects.filter(id__in=relate_course_ids).order_by('-click_nums')[:5]
 
         return render(request, 'course-video.html', {
             'course': course,
+            'relate_courses': relate_courses,
         })
 
 

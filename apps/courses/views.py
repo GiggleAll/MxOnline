@@ -5,7 +5,7 @@ from django.db.models import Q
 from django.http import HttpResponse
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 
-from .models import Course
+from .models import Course, Video
 from operation.models import UserFavorite, CourseComments, UserCourse
 from utils.mixin_utils import LoginRequiredMixin
 
@@ -44,7 +44,7 @@ class CourseListView(View):
         })
 
 
-class CourseDetailView(LoginRequiredMixin, View):
+class CourseDetailView(View):
     """
     课程详情
     """
@@ -106,13 +106,13 @@ class CourseInfoView(LoginRequiredMixin, View):
         # 取出当前课程所有用户的课程，并按点击量降序排列取5个
         relate_courses = Course.objects.filter(id__in=relate_course_ids).order_by('-click_nums')[:5]
 
-        return render(request, 'course-video.html', {
+        return render(request, 'course-info.html', {
             'course': course,
             'relate_courses': relate_courses,
         })
 
 
-class CourseCommentView(View):
+class CourseCommentView(LoginRequiredMixin, View):
     """
     课程的评论信息
     """
@@ -145,3 +145,37 @@ class AddCommentsView(View):
             return HttpResponse('{"status": "success", "msg": "已添加"}', content_type='application/json')
         else:
             return HttpResponse('{"status": "fail", "msg": "添加评论出错"}', content_type='application/json')
+
+
+class VideoPlayView(LoginRequiredMixin, View):
+    """
+    课程的视频信息
+    """
+
+    def get(self, request, video_id):
+        # 取出当前视频
+        video = Video.objects.get(id=int(video_id))
+
+        # 取出当前课程
+        course = video.lesson.course
+
+        # 查询用户是否已经关联了该课程
+        if not UserCourse.objects.filter(user=request.user, course=course):
+            UserCourse(user=request.user, course=course).save()
+
+        # 取出当前课程的所有用户
+        user_courses = course.get_user_courses()
+        # 取出当前课程所有用户的id
+        user_ids = [user_course.user.id for user_course in user_courses]
+        # 取出当前课程所有用户的课程学习记录
+        relate_user_courses = UserCourse.objects.filter(user_id__in=user_ids)
+        # 取出当前课程所有用户课程学习记录中的课程id
+        relate_course_ids = [user_course.course.id for user_course in relate_user_courses]
+        # 取出当前课程所有用户的课程，并按点击量降序排列取5个
+        relate_courses = Course.objects.filter(id__in=relate_course_ids).order_by('-click_nums')[:5]
+
+        return render(request, 'course-play.html', {
+            'course': course,
+            'relate_courses': relate_courses,
+            'video': video,
+        })

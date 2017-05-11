@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
-{% block title %}公开课视频信息 - 慕学在线网{% endblock %}
+{% block title %}{{ video.name }} - 慕学在线网{% endblock %}
 {% block custom_bread %}
     <section>
         <div class="wp">
             <ul class="crumbs">
                 <li><a href="{% url 'index' %}">首页</a>></li>
                 <li><a href="{% url 'course:course_list' %}">公开课</a>></li>
-                <li><a href="{% url 'course:course_detail' course.id %}">课程详情</a>></li>
-                <li>章节信息</li>
+                <li><a href="{% url 'course:course_detail' course.id %}">{{ course.name }}</a>></li>
+                <li>{{ video.name }}</li>
             </ul>
         </div>
     </section>
@@ -36,11 +36,12 @@
 
 {% block content %}
     <div id="main">
-        <div style="width: 1200px;height: 675px;margin-left: 340px;">
+        <div style="width: 1200px;height: 675px;margin: 0 auto;">
             <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="1200"
+                   height="675"
                    poster="http://video-js.zencoder.com/oceans-clip.png"
                    data-setup="{}">
-                <source src="" type="video/mp4">
+                <source src="{{ video.url }}" type="video/mp4">
             </video>
         </div>
         <div class="course-info-main clearfix w has-progress">
@@ -71,7 +72,7 @@
                                     <ul class="video">
                                         {% for video in lesson.get_videos %}
                                             <li>
-                                                <a target="_blank" href='{{ video.url }}'
+                                                <a target="_blank" href="{% url 'course:video_play' video.id %}"
                                                    class="J-media-item studyvideo">
                                                     {{ video.name }}({{ video.learn_times }})
                                                     <i class="study-state"></i>

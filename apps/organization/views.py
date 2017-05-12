@@ -215,6 +215,61 @@ class TeacherListView(View):
     def get(self, request):
         all_teacher = Teacher.objects.all()
 
-        return render(request, 'teachers-list.html', {
+        # 讲师排行榜
+        teacher_ranklist = all_teacher.order_by('-click_nums')[:2]
 
+        # 进行排序
+        sort_type = request.GET.get('sort', '')
+        if sort_type == 'hot':
+            all_teacher = all_teacher.order_by('-click_nums')
+        else:
+            all_teacher = all_teacher.order_by('-add_time')
+
+        # 讲师总人数
+        teacher_nums = all_teacher.count()
+
+        # 进行分页
+        try:
+            page = request.GET.get('page', 1)
+        except PageNotAnInteger:
+            page = 1
+
+        p = Paginator(all_teacher, 1, request=request)
+
+        teachers = p.page(page)
+
+        return render(request, 'teachers-list.html', {
+            'teachers': teachers,
+            'teacher_nums': teacher_nums,
+            'sort_type': sort_type,
+            'teacher_ranklist': teacher_ranklist,
+        })
+
+
+class TeacherDetailView(View):
+    """
+    讲师详情
+    """
+
+    def get(self, request, teacher_id):
+        teacher = Teacher.objects.get(id=teacher_id)
+        teacher_ranklist = Teacher.objects.all().order_by('-click_nums')[:2]
+
+        # 讲师是否被收藏
+        has_fav_teacher = False
+        if request.user.is_authenticated():
+            if UserFavorite.objects.filter(user=request.user, fav_id=teacher.id, fav_type=3):
+                has_fav_teacher = True
+
+        # 课程机构是否被收藏
+        has_fav_org = False
+        if request.user.is_authenticated():
+            if UserFavorite.objects.filter(user=request.user, fav_id=teacher.org.id, fav_type=2):
+                has_fav_org = True
+
+        return render(request, 'teacher-detail.html', {
+            'teacher': teacher,
+            'teacher_ranklist': teacher_ranklist,
+            'has_fav_teacher': has_fav_teacher,
+            'has_fav_org': has_fav_org
         })

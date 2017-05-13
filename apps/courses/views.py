@@ -19,6 +19,12 @@ class CourseListView(View):
         # 热门课程
         hot_course = all_course.order_by('-click_nums')[:3]
 
+        # 通过关键字筛选
+        keywords = request.GET.get('keywords', '')
+        if keywords:
+            all_course = all_course.filter(
+                Q(name__icontains=keywords) | Q(desc__icontains=keywords) | Q(detail__icontains=keywords))
+
         # 对所有课程进行排序
         sort_type = request.GET.get('sort', '')
         if sort_type == 'hot':

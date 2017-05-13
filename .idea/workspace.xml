@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="33f22b02-6388-4eec-a930-e6526683982b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/organization/urls.py" afterPath="$PROJECT_DIR$/apps/organization/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/courses/views.py" afterPath="$PROJECT_DIR$/apps/courses/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/organization/views.py" afterPath="$PROJECT_DIR$/apps/organization/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/forgetpwd.html" afterPath="$PROJECT_DIR$/templates/forgetpwd.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/org-list.html" afterPath="$PROJECT_DIR$/templates/org-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/register.html" afterPath="$PROJECT_DIR$/templates/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/teacher-detail.html" afterPath="$PROJECT_DIR$/templates/teacher-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/teachers-list.html" afterPath="$PROJECT_DIR$/templates/teachers-list.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,60 +23,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="66" column="54" lean-forward="false" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
+              <folding>
+                <element signature="n#block#2;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deco-common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/deco-common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="57" column="24" lean-forward="true" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
-              <caret line="51" column="39" lean-forward="false" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
+            <state relative-caret-position="178">
+              <caret line="50" column="16" lean-forward="false" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
+        <entry file="file://$PROJECT_DIR$/apps/courses/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="253" column="24" lean-forward="false" selection-start-line="253" selection-start-column="24" selection-end-line="253" selection-end-column="24" />
-              <folding>
-                <element signature="e#15#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-              <folding>
-                <element signature="n#div#0;n#!!top" expanded="false" />
-                <element signature="n#section#0;n#!!top" expanded="false" />
-                <element signature="n#section#1;n#!!top" expanded="false" />
-                <element signature="n#section#2;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="79" column="28" lean-forward="true" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+            <state relative-caret-position="81">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/organization/urls.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+            <state relative-caret-position="135">
+              <caret line="224" column="23" lean-forward="true" selection-start-line="224" selection-start-column="23" selection-end-line="224" selection-end-column="23" />
               <folding>
-                <element signature="e#63#95#0" expanded="true" />
+                <element signature="e#15#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,26 +93,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>href=&quot;course-list.</find>
-      <find>href=&quot;c</find>
-      <find>href=</find>
-      <find>href=&quot;co</find>
-      <find>href=&quot;cou</find>
-      <find>href=&quot;cour</find>
-      <find>href=&quot;cours</find>
-      <find>href=&quot;course</find>
-      <find>href=&quot;course-l</find>
-      <find>href=&quot;course-</find>
-      <find>href=&quot;course-d</find>
-      <find>href=&quot;</find>
-      <find>href=&quot;\</find>
-      <find>href=&quot;\w</find>
-      <find>href=&quot;\w*html</find>
-      <find>href=&quot;\w*htm</find>
-      <find>href=&quot;\w*ht</find>
-      <find>href=&quot;\w*h</find>
-      <find>href=&quot;\w*</find>
-      <find>href=&quot;\w*l</find>
       <find>href=&quot;\w*l$</find>
       <find>href=&quot;\wl$</find>
       <find>href=&quot;\l$</find>
@@ -132,6 +103,26 @@
       <find>href=&quot;.*</find>
       <find>href=&quot;.*h</find>
       <find>href=&quot;.*html</find>
+      <find>d</find>
+      <find>deco</find>
+      <find>deco-</find>
+      <find>deco-c</find>
+      <find>deco-co</find>
+      <find>deco-com</find>
+      <find>deco-comm</find>
+      <find>deco-commo</find>
+      <find>deco-commone.</find>
+      <find>deco-commone</find>
+      <find>deco-common</find>
+      <find>deco-common.</find>
+      <find>deco-common.j</find>
+      <find>deco-common.js</find>
+      <find>i</find>
+      <find>import</find>
+      <find>jsSearchBtn</find>
+      <find>import Q</find>
+      <find>n</find>
+      <find>nav</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;static/</replace>
@@ -149,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/apps/operation/adminx.py" />
         <option value="$PROJECT_DIR$/apps/operation/apps.py" />
         <option value="$PROJECT_DIR$/apps/operation/__init__.py" />
         <option value="$PROJECT_DIR$/apps/users/apps.py" />
@@ -189,17 +179,18 @@
         <option value="$PROJECT_DIR$/static/js/video.min.js" />
         <option value="$PROJECT_DIR$/templates/course-info.html" />
         <option value="$PROJECT_DIR$/apps/courses/urls.py" />
-        <option value="$PROJECT_DIR$/apps/courses/views.py" />
         <option value="$PROJECT_DIR$/templates/course-play.html" />
         <option value="$PROJECT_DIR$/MxOnline/urls.py" />
         <option value="$PROJECT_DIR$/apps/operation/models.py" />
-        <option value="$PROJECT_DIR$/apps/organization/views.py" />
         <option value="$PROJECT_DIR$/templates/teacher-detail.html" />
         <option value="$PROJECT_DIR$/apps/organization/models.py" />
         <option value="$PROJECT_DIR$/templates/teachers-list.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/apps/organization/urls.py" />
+        <option value="$PROJECT_DIR$/static/js/deco-common.js" />
+        <option value="$PROJECT_DIR$/apps/courses/views.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/apps/organization/views.py" />
       </list>
     </option>
   </component>
@@ -702,7 +693,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494605172137</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="完成全局导航配置 2017-5-13 14:57:05">
+      <created>1494658636707</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1494658636707</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -726,7 +724,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2138229" sideWeight="0.49196786" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279503" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1741453" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18898489" sideWeight="0.50803214" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34534162" sideWeight="0.4957265" order="3" side_tool="false" content_ui="tabs" />
@@ -788,14 +786,15 @@
     <MESSAGE value="完成视频的播放 2017-5-11 22:39:54" />
     <MESSAGE value="开始讲师列表页的设计 2017-5-11 23:02:47" />
     <MESSAGE value="完成讲师列表和详情页的显示 2017-5-13 00:06:07" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成讲师列表和详情页的显示 2017-5-13 00:06:07" />
+    <MESSAGE value="完成全局导航配置 2017-5-13 14:57:05" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成全局导航配置 2017-5-13 14:57:05" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="56" />
+      <option name="time" value="58" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Python.DjangoServer">
@@ -805,20 +804,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Envs/mxonline/Lib/site-packages/django/forms/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3299">
-          <caret line="435" column="8" lean-forward="false" selection-start-line="435" selection-start-column="8" selection-end-line="435" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Envs/mxonline/Lib/site-packages/django/db/models/manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="215" column="8" lean-forward="false" selection-start-line="215" selection-start-column="8" selection-end-line="215" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Envs/mxonline/Lib/site-packages/django/shortcuts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -937,14 +922,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/org_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="73" column="52" lean-forward="false" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/前端/html/course-video.html" />
     <entry file="file://$PROJECT_DIR$/static/css/muke/course/common-less.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -969,86 +946,6 @@
             <marker date="1494509721301" expanded="false" signature="5556:5562" ph=" " />
             <marker date="1494509721301" expanded="false" signature="5562:5568" ph=" " />
             <marker date="1494509721301" expanded="false" signature="7757:7771" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/course-detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4347">
-          <caret line="161" column="39" lean-forward="false" selection-start-line="161" selection-start-column="39" selection-end-line="161" selection-end-column="39" />
-          <folding>
-            <marker date="1494509721301" expanded="true" signature="3138:4130" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="3197:4099" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="4197:6050" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="4240:4358" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="4400:4663" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="4485:4632" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="4744:4891" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="4986:5099" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="5016:5069" ph="{% if has_fav_course_org ... %}" />
-            <marker date="1494509721301" expanded="true" signature="5143:6023" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="5176:5992" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="5213:5385" ph="..." />
-            <marker date="1494509721301" expanded="false" signature="5259:5265" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5266:5272" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5275:5281" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5281:5287" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5287:5293" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5293:5299" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5299:5305" ph=" " />
-            <marker date="1494509721301" expanded="true" signature="5422:5598" ph="..." />
-            <marker date="1494509721301" expanded="false" signature="5468:5474" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5475:5481" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5484:5490" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5490:5496" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5496:5502" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5502:5508" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5508:5514" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5641:5647" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5647:5653" ph=" " />
-            <marker date="1494509721301" expanded="true" signature="5725:5958" ph="..." />
-            <marker date="1494509721301" expanded="false" signature="5727:5733" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5733:5739" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5739:5745" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5745:5751" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5751:5757" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5757:5763" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5763:5769" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5770:5776" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5814:5820" ph=" " />
-            <marker date="1494509721301" expanded="false" signature="5820:5826" ph=" " />
-            <marker date="1494509721301" expanded="true" signature="6136:8062" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="6161:8047" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="6217:8032" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="6259:6852" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="6298:6460" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="6346:6433" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="6513:6584" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="6637:6829" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="6683:6802" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="6735:6771" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="6895:8013" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="6996:7990" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="7022:7964" ph="{% for relate_course in relate_courses ... %}" />
-            <marker date="1494509721301" expanded="true" signature="7095:7926" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="7132:7510" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="7245:7472" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="7338:7431" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="7547:7892" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="7660:7738" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="8080:9349" ph="{% block custom_js ... %}" />
-            <marker date="1494509721301" expanded="true" signature="8136:9333" ph="..." />
-            <marker date="1494509721301" expanded="true" signature="8210:9081" ph="{...}" />
-            <marker date="1494509721301" expanded="true" signature="8231:9069" ph="{&quot;type&quot;: &quot;POST&quot;...}" />
-            <marker date="1494509721301" expanded="true" signature="8487:8583" ph="{...}" />
-            <marker date="1494509721301" expanded="true" signature="8626:9054" ph="{...}" />
-            <marker date="1494509721301" expanded="true" signature="8675:8925" ph="{...}" />
-            <marker date="1494509721301" expanded="true" signature="8726:8825" ph="{...}" />
-            <marker date="1494509721301" expanded="true" signature="8831:8902" ph="{...}" />
-            <marker date="1494509721301" expanded="true" signature="8961:9036" ph="{...}" />
-            <marker date="1494509721301" expanded="true" signature="9131:9192" ph="{...}" />
-            <marker date="1494509721301" expanded="true" signature="9245:9317" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1100,16 +997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/org-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="112" column="35" lean-forward="true" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
-          <folding>
-            <element signature="n#block#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/courses/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
@@ -1139,16 +1026,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/courses/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="57" column="17" lean-forward="true" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
-          <folding>
-            <element signature="e#15#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/operation/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="999">
@@ -1161,13 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
           <caret line="860" column="8" lean-forward="false" selection-start-line="860" selection-start-column="8" selection-end-line="860" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="51" column="39" lean-forward="false" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1188,16 +1058,6 @@
           <caret line="51" column="49" lean-forward="false" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
           <folding>
             <element signature="e#2805#2811#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="253" column="24" lean-forward="false" selection-start-line="253" selection-start-column="24" selection-end-line="253" selection-end-column="24" />
-          <folding>
-            <element signature="e#15#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1226,10 +1086,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/org-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2781">
+          <caret line="112" column="35" lean-forward="true" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
+          <folding>
+            <element signature="n#block#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/org_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1971">
+          <caret line="73" column="52" lean-forward="false" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/course-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="161" column="39" lean-forward="false" selection-start-line="161" selection-start-column="39" selection-end-line="161" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding>
             <element signature="n#div#0;n#!!top" expanded="false" />
             <element signature="n#section#0;n#!!top" expanded="false" />
@@ -1242,18 +1128,64 @@
     <entry file="file://$PROJECT_DIR$/apps/organization/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
-          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
           <folding>
-            <element signature="e#63#95#0" expanded="true" />
+            <element signature="e#63#95#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/deco-common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="57" column="24" lean-forward="true" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/mx/Lib/site-packages/django/db/models/query_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/courses/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="79" column="28" lean-forward="true" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+        <state relative-caret-position="189">
+          <caret line="66" column="54" lean-forward="false" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
+          <folding>
+            <element signature="n#block#2;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="50" column="16" lean-forward="false" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="224" column="23" lean-forward="true" selection-start-line="224" selection-start-column="23" selection-end-line="224" selection-end-column="23" />
+          <folding>
+            <element signature="e#15#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

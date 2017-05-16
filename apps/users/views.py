@@ -319,7 +319,10 @@ class UserMessageView(LoginRequiredMixin, View):
 
     def get(self, request):
         msgs = UserMessage.objects.filter(user=request.user.id)
-
+        unread_msgs = UserMessage.objects.filter(has_read=False, user=request.user.id)
+        for unread in unread_msgs:
+            unread.has_read = True
+            unread.save()
         # 进行分页
         try:
             page = request.GET.get('page', 1)

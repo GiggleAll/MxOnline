@@ -72,7 +72,7 @@
                                 </dt>
                                 <dd>
                                     <div class="clearfix">
-                                        <a href="org-detail-homepage.html">
+                                        <a href="{% url 'org:org_home' course_org.id %}">
                                             <h1>{{ course_org.name }}</h1>
                                             <div class="pic fl">
 
@@ -89,9 +89,9 @@
                                         <li class="c8" style="padding-left:18px;">{{ course_org.address }}</li>
                                         <li class="pic10" style="padding-left:18px;">经典课程：
 
-                                            <a href="/diary/19/">c语言基础入门</a>
+                                            <a href="{% url 'org:org_home' course_org.id %}">c语言基础入门</a>
 
-                                            <a href="/diary/16/">数据库基础</a>
+                                            <a href="{% url 'org:org_home' course_org.id %}">数据库基础</a>
 
                                         </li>
                                     </ul>
@@ -150,7 +150,7 @@
                     <dl class="des">
                         <dt class="num fl">{{ forloop.counter }}</dt>
                         <dd>
-                            <a href="/company/2/"><h1>{{ current_org.name }}</h1></a>
+                            <a href="{% url 'org:org_home' current_org.id %}"><h1>{{ current_org.name }}</h1></a>
                             <p>{{ current_org.address }}</p>
                         </dd>
                     </dl>

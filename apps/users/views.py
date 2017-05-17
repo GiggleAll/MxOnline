@@ -10,7 +10,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.core.urlresolvers import reverse
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 
-from .models import UserProfile, EmailVerifyRecord
+from .models import UserProfile, EmailVerifyRecord, Banner
 from .forms import LoginForm, RegisterForm, ForgetForm, ModifyPwdForm, UploadImageForm, UserInfoForm
 from utils.email_send import send_register_email
 from utils.mixin_utils import LoginRequiredMixin
@@ -335,4 +335,26 @@ class UserMessageView(LoginRequiredMixin, View):
 
         return render(request, 'usercenter-message.html', {
             'msgs': msgs,
+        })
+
+
+class IndexView(View):
+    """
+    首页
+    """
+
+    def get(self, request):
+        # 取出轮播图
+        all_banner = Banner.objects.all().order_by('index')
+        # 取出课程
+        courses = Course.objects.filter(is_banner=False)[:5]
+        banner_courses =Course.objects.filter(is_banner=True)[:3]
+        # 取出机构
+        course_orgs = CourseOrg.objects.all()[:15]
+
+        return render(request, 'index.html', {
+            'all_banner': all_banner,
+            'courses': courses,
+            'banner_courses': banner_courses,
+            'course_orgs': course_orgs,
         })

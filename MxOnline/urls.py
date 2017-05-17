@@ -20,15 +20,15 @@ from django.views.generic import TemplateView
 from django.views.static import serve
 import xadmin
 
-from users.views import LoginView, RegisterView, ActiveUserView, ForgetPwdView, ResetView, ModifyPwdView, LogoutView
+from users.views import LoginView, RegisterView, ActiveUserView, ForgetPwdView, \
+    ResetView, ModifyPwdView, LogoutView, IndexView
 from organization.views import OrgView
 from .settings import MEDIA_ROOT
 
 urlpatterns = [
     url(r'^xadmin/', xadmin.site.urls),
 
-    url(r'^$', TemplateView.as_view(template_name='index.html'), name='index'),
-    # url(r'^login/$', users_view.user_login, name='login'),
+    url(r'^$', IndexView.as_view(), name='index'),
     url(r'^login/$', LoginView.as_view(), name='login'),
     url(r'^logout/$', LogoutView.as_view(), name='logout'),
     url(r'^register/$', RegisterView.as_view(), name='register'),

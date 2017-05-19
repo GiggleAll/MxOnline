@@ -133,7 +133,7 @@ class LoginView(View):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return render(request, 'index.html')
+                    return HttpResponseRedirect(reverse('index'))
                 else:
                     return render(request, 'login.html', {'msg': u'用户尚未激活！'})
             else:
@@ -345,15 +345,15 @@ class IndexView(View):
 
     def get(self, request):
         # 取出轮播图
-        all_banner = Banner.objects.all().order_by('index')
+        all_banners = Banner.objects.all().order_by('index')
         # 取出课程
-        courses = Course.objects.filter(is_banner=False)[:5]
+        courses = Course.objects.filter(is_banner=False)[:6]
         banner_courses =Course.objects.filter(is_banner=True)[:3]
         # 取出机构
         course_orgs = CourseOrg.objects.all()[:15]
 
         return render(request, 'index.html', {
-            'all_banner': all_banner,
+            'all_banners': all_banners,
             'courses': courses,
             'banner_courses': banner_courses,
             'course_orgs': course_orgs,

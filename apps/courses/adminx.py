@@ -5,6 +5,14 @@ __date__ = '2017/4/28 0028 10:28'
 from .models import Course, Lesson, Video, CourseResource
 import xadmin
 
+class LessonInline(object):
+    model = Lesson
+    extra = 0
+
+
+class CourseResourceInline(object):
+    model = CourseResource
+    extra = 0
 
 class CourseAdmin(object):
     list_display = ['name', 'desc', 'detail', 'degree', 'learn_times', 'students', 'fav_nums', 'image', 'click_nums',
@@ -13,6 +21,11 @@ class CourseAdmin(object):
                      'add_time']
     list_filter = ['name', 'desc', 'detail', 'degree', 'learn_times', 'students', 'fav_nums', 'image', 'click_nums',
                    'add_time']
+    ordering = ['-click_nums']
+    readonly_fields = ['click_nums']
+    # readonly_fields 和 exclude 是互斥的
+    exclude = ['fav_nums']
+    inlines = [LessonInline, CourseResourceInline]
 
 
 class LessonAdmin(object):

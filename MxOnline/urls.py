@@ -23,7 +23,7 @@ import xadmin
 from users.views import LoginView, RegisterView, ActiveUserView, ForgetPwdView, \
     ResetView, ModifyPwdView, LogoutView, IndexView
 from organization.views import OrgView
-from .settings import MEDIA_ROOT, STATIC_ROOT
+from .settings import MEDIA_ROOT
 
 urlpatterns = [
     url(r'^xadmin/', xadmin.site.urls),
@@ -39,7 +39,7 @@ urlpatterns = [
     url(r'^modify_pwd/$', ModifyPwdView.as_view(), name='modify_pwd'),
     # 配置上传文件的处理函数
     url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
-    url(r'^static/(?P<path>.*)$', serve, {'document_root': STATIC_ROOT}),
+    # url(r'^static/(?P<path>.*)$', serve, {'document_root': STATIC_ROOT}),
     # 课程机构url配置
     url(r'^org/', include('organization.urls', namespace='org')),
     # 课程相关url配置

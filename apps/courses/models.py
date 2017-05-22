@@ -49,6 +49,18 @@ class Course(models.Model):
         return self.name
 
 
+class BannerCourse(Course):
+    """
+    用来在xadmin中管理轮播的课程
+    """
+
+    class Meta:
+        verbose_name = u'轮播课程'
+        verbose_name_plural = verbose_name
+        # proxy一定要设为True，否则就会在数据库中再生成一张表
+        proxy = True
+
+
 class Lesson(models.Model):
     course = models.ForeignKey(Course, verbose_name=u'课程')
     name = models.CharField(max_length=100, verbose_name=u'章节名')

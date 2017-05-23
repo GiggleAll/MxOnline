@@ -46,6 +46,8 @@ urlpatterns = [
     url(r'^course/', include('courses.urls', namespace='course')),
     # 个人中心url配置
     url(r'^users/', include('users.urls', namespace='users')),
+    # 富文本相关url
+    url(r'^ueditor/', include('DjangoUeditor.urls')),
 ]
 
 # 全局404页面的配置

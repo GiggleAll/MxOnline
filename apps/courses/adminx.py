@@ -3,6 +3,7 @@ __author__ = 'szh'
 __date__ = '2017/4/28 0028 10:28'
 
 from .models import Course, Lesson, Video, CourseResource, BannerCourse
+from organization.models import CourseOrg
 import xadmin
 
 
@@ -17,7 +18,8 @@ class CourseResourceInline(object):
 
 
 class CourseAdmin(object):
-    list_display = ['name', 'desc', 'detail', 'degree', 'learn_times', 'students', 'fav_nums', 'image', 'click_nums',
+    # get_lesson_num和go_to是函数调用，属于增加的列
+    list_display = ['name', 'desc', 'detail', 'degree', 'learn_times', 'students', 'get_lesson_num', 'go_to', 'fav_nums', 'image', 'click_nums',
                     'add_time']
     search_fields = ['name', 'desc', 'detail', 'degree', 'students', 'fav_nums', 'image', 'click_nums',
                      'add_time']
@@ -25,18 +27,32 @@ class CourseAdmin(object):
                    'add_time']
     ordering = ['-click_nums']
     readonly_fields = ['click_nums']
+    # 在列表页直接修改，列的右边会有一个可编辑的按钮
+    list_editable = ['degree', 'desc']
     # readonly_fields 和 exclude 是互斥的
     exclude = ['fav_nums']
     inlines = [LessonInline, CourseResourceInline]
+    style_fields = {"detail": "ueditor"}
+    # 定义页面刷新的时间间隔
+    refresh_times = [3, 5]
 
     def queryset(self):
         qs = super(CourseAdmin, self).queryset()
         qs = qs.filter(is_banner=False)
         return qs
 
+    def save_models(self):
+        # 在保存课程的时候统计课程机构的课程数
+        obj = self.new_obj
+        obj.save()
+        if obj.course_org is not None:
+            course_org = obj.course_org
+            course_org.course_nums = Course.objects.filter(course_org=course_org).count()
+            course_org.save()
+
 
 class BannerCourseAdmin(object):
-    list_display = ['name', 'desc', 'detail', 'degree', 'learn_times', 'students', 'fav_nums', 'image', 'click_nums',
+    list_display = ['name', 'desc', 'detail', 'degree', 'learn_times', 'students', 'get_lesson_num', 'fav_nums', 'image', 'click_nums',
                     'add_time']
     search_fields = ['name', 'desc', 'detail', 'degree', 'students', 'fav_nums', 'image', 'click_nums',
                      'add_time']

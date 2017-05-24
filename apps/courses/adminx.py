@@ -32,7 +32,9 @@ class CourseAdmin(object):
     # readonly_fields 和 exclude 是互斥的
     exclude = ['fav_nums']
     inlines = [LessonInline, CourseResourceInline]
-    style_fields = {"detail": "ueditor"}
+    style_fields = {'detail': 'ueditor'}
+    # 显示导入按钮
+    import_excel = True
     # 定义页面刷新的时间间隔
     refresh_times = [3, 5]
 
@@ -49,6 +51,11 @@ class CourseAdmin(object):
             course_org = obj.course_org
             course_org.course_nums = Course.objects.filter(course_org=course_org).count()
             course_org.save()
+
+    def post(self, request, *args, **kwargs):
+        if 'excel' in request.FILES:
+            pass
+        return super(CourseAdmin, self).post(request, args, kwargs)
 
 
 class BannerCourseAdmin(object):

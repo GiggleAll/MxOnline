@@ -48,6 +48,9 @@
                                         <span class="pic"><img width="40" height="40"
                                                                src="
 
+
+
+
                                                                        {{ MEDIA_URL }}{{ user_course.user.image }}"/></span>
                                     {% endfor %}
                                 </li>
@@ -56,8 +59,9 @@
                                 <div class="btn colectgroupbtn" id="jsLeftBtn">
                                     {% if has_fav_course %}已收藏{% else %}收藏{% endif %}
                                 </div>
-                                <div class="buy btn"><a style="color: white"
-                                                        href="{% url 'course:course_info' course.id %}">开始学习</a></div>
+                                <div class="buy btn" id="LearnBtn"><a style="color: white"
+                                                                      href="{% url 'course:course_info' course.id %}">开始学习</a>
+                                </div>
                             </div>
                         </div>
                         <div class="group-share-box">
@@ -190,6 +194,10 @@
 
         $('#jsLeftBtn').on('click', function () {
             add_fav($(this), {{ course.id }}, 1);
+        });
+
+        $('#LearnBtn').on('click', function () {
+            window.location.href = "{% url 'course:course_info' course.id %}"
         });
 
         $('#jsRightBtn').on('click', function () {
